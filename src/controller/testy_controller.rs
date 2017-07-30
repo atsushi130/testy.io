@@ -17,13 +17,18 @@ pub fn post_testy(resource: JSON<Testy>) -> JSON<Testy> {
 }
 
 #[get("/testy")]
-pub fn get_testy() -> JSON<Testy> {
+pub fn get_testies() -> JSON<Vec<Testy>> {
 
-    let testy = Testy {
-        id: 1,
-        uri: "/testy".to_string(),
-        domain: "testy.api.io".to_string(),
-    };
+    let numbers: Vec<i32> = vec![1, 2, 3, 4, 5];
+    let testies = numbers.iter().map(|number| {
+        Testy::new(*number, "/testy")
+    }).collect();
 
+    JSON(testies)
+}
+
+#[get("/testy/<id>")]
+pub fn get_testy(id: i32) -> JSON<Testy> {
+    let testy = Testy::new(id, "/testy/<id>");
     JSON(testy)
 }
