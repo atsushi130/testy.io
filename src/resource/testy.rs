@@ -10,3 +10,13 @@ pub struct Testy {
     pub uri: String,
     pub domain: String
 }
+
+impl Testy {
+    pub fn new(id: i32, uri: &str) -> Self {
+        Testy {
+            id,
+            uri: uri.to_string(),
+            domain: "testy.io".to_string()
+        }
+    }
+}
