@@ -1,4 +1,7 @@
 ## testy.io
+![rust](https://img.shields.io/badge/language-rust-dea584.svg)
+![testy.io](https://img.shields.io/badge/api-testy.io-4183c4.svg)  
+testy.io is supporter of HTTP request testing.
 
 ### Run
 ```console
