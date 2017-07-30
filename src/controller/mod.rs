@@ -12,5 +12,5 @@ mod testy_controller;
 use rocket;
 
 pub fn routes() {
-    rocket::ignite().mount("/", routes![testy_controller::get_testy, testy_controller::post_testy]).launch();
+    rocket::ignite().mount("/", routes![testy_controller::get_testy, testy_controller::get_testies, testy_controller::post_testy]).launch();
 }
