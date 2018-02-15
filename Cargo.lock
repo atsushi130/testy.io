@@ -1,15 +1,3 @@
-[root]
-name = "testy_io"
-version = "0.1.0"
-dependencies = [
- "rocket 0.2.9 (registry+https://github.com/rust-lang/crates.io-index)",
- "rocket_codegen 0.2.9 (registry+https://github.com/rust-lang/crates.io-index)",
- "rocket_contrib 0.2.9 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde 0.9.15 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde_derive 0.9.15 (registry+https://github.com/rust-lang/crates.io-index)",
- "serde_json 0.9.10 (registry+https://github.com/rust-lang/crates.io-index)",
-]
-
 [[package]]
 name = "base64"
 version = "0.5.2"
@@ -261,6 +249,18 @@ version = "0.2.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "term 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "testy_io"
+version = "0.1.0"
+dependencies = [
+ "rocket 0.2.9 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rocket_codegen 0.2.9 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rocket_contrib 0.2.9 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde 0.9.15 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde_derive 0.9.15 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde_json 0.9.10 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
